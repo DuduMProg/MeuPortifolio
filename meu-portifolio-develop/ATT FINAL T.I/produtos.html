@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE DO DUDU</title>
+    <link rel="stylesheet" href="design final.css">
+    <link rel="stylesheet" href="estilo-carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="imagex/png" href="imagens/icon site.png">
+    <script src="carrinho.js" async></script>
+
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            
+            <div class="flex">
+                <section class="logo">
+                    <a href="index.html">
+                    <img src="imagens/logo site.png" alt="">
+                </section>
+
+                <a href="#"><i class="bi bi-globe-americas"></i></a>
+                <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="intro.html">Introdução</a></li>
+                        <li><a href="primeirão.html">Primeiro ano</a></li>
+                        <li><a href="segundão.html">Segundo Ano</a></li>
+                        <li><a href="terceirão.html">Terceiro Ano</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Entre em contato</a></li>
+                    </ul>
+                </nav>
+                </section>
+                
+                </div>
+                <div class="btn-menu" id="btn-menu">
+                    <div class="linemenu1"></div>
+                    <div class="linemenu2"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="product">
+          <h2>Produto</h2>
+          <div class="product-item">
+            <img src="imagens/V1999.jpg" alt="Produto">
+            <p>Vinyl 1999 <br> Joey Bada$$</p>
+
+            <p>Preço: R$ 50,00</p>
+            <button onclick="addToCart(50)">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart(50)">Remover do Carrinho</button>
+          </div>
+
+          <div class="product-item">
+            <img src="imagens/V2000.jpg" alt="Produto">
+            <p>Vinyl 2000 <br> Joey Bada$$</p>
+            
+            <p>Preço: R$ 50,00</p>
+            <button onclick="addToCart(50)">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart(50)">Remover do Carrinho</button>
+          </div>
+
+          <div class="product-item">
+            <img src="imagens/VBlonde.jpg" alt="Produto">
+            <p>Vinyl Blonde <br> Frank Ocean</p>
+            
+            <p>Preço: R$ 50,00</p>
+            <button onclick="addToCart(50)">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart(50)">Remover do Carrinho</button>
+          </div>
+
+          <div class="product-item">
+            <img src="imagens/VChannel.jpg" alt="Produto">
+            <p>Vinyl Channel Orange <br> Frank Ocean</p>
+            
+            <p>Preço: R$ 50,00</p>
+            <button onclick="addToCart(50)">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart(50)">Remover do Carrinho</button>
+          </div>
+
+          <div class="product-item">
+            <img src="imagens/VBTI.jpg" alt="Produto">
+            <p>Vinyl Because The Internet <br> Childish Gambino</p>
+            
+            <p>Preço: R$ 50,00</p>
+            <button onclick="addToCart(50)">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart(50)">Remover do Carrinho</button>
+          </div>
+
+          <div class="product-item">
+            <img src="imagens/VLove.jpg" alt="Produto">
+            <p>Vinyl Love Deluxe <br> Sade</p>
+            
+            <p>Preço: R$ 50,00</p>
+            <button onclick="addToCart(50)">Adicionar ao Carrinho</button>
+            <button onclick="removeFromCart(50)">Remover do Carrinho</button>
+          </div>
+
+
+        </section>
+    
+        <section class="cart">
+          <h2>Carrinho de Compras</h2>
+          <p id="cart-items">Itens no Carrinho: 0</p>
+          <p id="cart-total">Valor Total: R$ 0,00</p>
+          <button id="checkout-btn" onclick="finalizePurchase()">Finalizar Compra</button>
+        </section>
+      </main>
+    
+      <script src="carrinho.js"></script>
+      <script src="code.js"></script>
+
+</body>
+</html>

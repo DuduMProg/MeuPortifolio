@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #000;
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: #58b5ed;
+}
+
+header i{
+    font-size: 30px;
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-Carrinho button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(imagens/eevee.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner h1{
+    font-size: 4em;
+}
+
+.banner h1 span{
+    color: #FE775A;
+}
+.banner2{
+    height: 100vh;
+    background-image: url(imagens/trabalhoBanner.avif);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner2 h1{
+    font-size: 4em;
+}
+
+.banner2 h1 span{
+    color: #868686dc;
+}
+/* estilo segundo ano*/
+section.cont1{
+    padding: 80px 0;
+
+}
+
+.banner3{
+    height: 100vh;
+    background-image: url(imagens/espeon.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner3 h1{
+    font-size: 4em;
+}
+
+.banner3 h1 span{
+    color: #fff;
+}
+/* estilo segundo ano*/
+
+.banner4{
+    height: 100vh;
+    background-image: url(imagens/sylveon.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner4 h1{
+    font-size: 4em;
+}
+
+.banner4 h1 span{
+    color: #6e2da5;
+}
+
+/* estilo terceiro ano*/
+
+.bannerIntro{
+    height: 100vh;
+    background-image: url(imagens/umbreon.jpg);
+    width: auto;
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bannerIntro h1{
+    color: #fff;
+    font-size: 4em;
+}
+
+.bannerIntro h1 span{
+    color: #58b5ed;
+}
+
+section.cont1{
+    background-color: #000;
+    padding: 80px 0;
+
+}
+
+.cont1 .itens1{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+}
+.cont1 .itens1 .imagem1 img{
+    max-width: 420px;
+}
+.cont1 .itens1 .txt1 h3{
+    color: #58b5ed;
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+section.intro{
+    background-color: #000000;
+    padding: 40px 4%;
+}
+section.intro .flex{
+    align-items: center;
+    gap: 60px;
+}
+.intro .txtIntro{
+    color: white;
+}
+
+.intro .txtIntro h2{
+    font-size: 40px; 
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.intro .txtIntro h2 span{
+    color: #58b5ed;
+    
+}
+.intro .txtIntro p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.intro .txtIntro .btn-midias button{
+    color: #000000;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #58b5ed;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+/*estilo contato*/
+
+section.formulario {
+    padding: 80px 4%;
+    background-color: #000;
+}
+
+section.formulario .container h2{
+    color: #ffff;
+    align-items: center;
+}
+
+.container h2 span{
+    color: #58b5ed;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+form input,
+form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input {
+    width: 120px;
+    background-color: #58b5ed;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+.banner5{
+    height: 100vh;
+    background-image: url(imagens/workBcg.jpg);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.banner5 h1{
+    font-size: 4em;
+}
+
+.banner5 h1 span{
+    color: #0dff55;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 606px){
+    header .menu, header .btn-Carrinho{
+        display: none;
+    }
+    header .btn-menu{
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    /*responsivo dos conteudos*/
+    section.cont1{
+        padding: 80px 0;
+    
+    }
+    
+    .cont1 .itens1{
+        flex-direction: column;
+    }
+    .cont1 .itens1 .imagem1 img{
+        width: 100%;
+    }
+    .cont1 .itens1 .txt1 p{
+        margin-bottom: 20px;
+    }
+    .cont1 .itens1 .txt1 h3{
+        font-size: 3em;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+    
+    /*responsivo intro*/
+    section.intro{
+        background-color: #000000;
+        padding: 40px 4%;
+    }
+    section.intro .flex{
+        flex-direction: column;
+    }
+    .intro .txtIntro{
+        color: white;
+    }
+    
+    .intro .txtIntro h2{
+        font-size: 40px; 
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .intro .txtIntro h2 span{
+        color: #58b5ed;
+        display: block;
+    }
+    .intro .txtIntro p{
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    .intro .txtIntro .btn-midias button{
+        color: #000000;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border: none;
+        background-color: #58b5ed;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+
+}
+
+/*estilo menu mobile*/
+header .btn-menu{
+    display: none;
+}
+
+header .btn-menu div{
+    background-color: #ffffff;
+    height: 3px;
+    margin: 10px 0;
+    transition: .2s;
+}
+header .btn-menu .linemenu1{
+    width: 30px;
+}
+header .btn-menu .linemenu2{
+    width: 20px;
+}
+
+header.rolagem .btn-menu div{
+    background-color: #000;
+}
+header .btn-menu .linemenu1.ativo1{
+    transform: rotate(45deg) translate(30%);
+}
+header .btn-menu .linemenu2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+}
+
+
+/* parte dos conhecimentos tecnicos */
+
+
+main {
+  background-color: #0f0f0f;
+  color: #00ffcc;
+  font-family: 'Courier New', monospace;
+  padding-top: 200px;
+  padding-bottom: 50px;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 1px solid #00ffcc;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffcc66;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+
+}
+
+.card ul li::before {
+  content: "▹";
+
+  left: 0;
+  color: #00ffcc;
+}
+
+.footer {
+  background-color: #1c1e22;
+  color: #ccc;
+  padding: 60px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  flex: 1 1 220px;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  margin-bottom: 16px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #888;
+  margin: 4px 0;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 40px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #00ffcc;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #00bfa6;
+}
+
+.footer-form {
+  display: flex;
+  gap: 8px;
+}
+
+.footer-form input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+}
+
+.footer-form button {
+  background-color: #00ffcc;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.footer-form button:hover {
+  background-color: #00bfa6;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* parte das certificações */
+.certificacoes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px;
+  background-color: #121416;
+}
+
+.certificacao-card {
+  background-color: #1e1f23;
+  padding: 24px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.certificacao-card:hover {
+  transform: translateY(-4px);
+}
+
+.certificacao-card h1 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #00ffcc;
+}
+
+.certificacao-card p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  color: #ccc;
+}
+
+.certificacao-card a {
+  text-decoration: none;
+  color: #00bfa6;
+  font-weight: bold;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s;
+}
+
+.certificacao-card a:hover {
+  border-bottom: 1px solid #00bfa6;
+}
+
+
+
+
+
